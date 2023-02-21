@@ -1,0 +1,9 @@
+Username: test TimeStamp: 2022-09-06 23:10:30.8656971 Successful Login: true
+Username: admin TimeStamp: 2022-09-06 23:10:54.2538083 Successful Login: true
+Username: test TimeStamp: 2022-09-06 23:11:11.0002167 Successful Login: false
+Username: admin TimeStamp: 2022-09-18 23:12:44.3160137 Successful Login: false
+Username: admin TimeStamp: 2022-09-18 23:12:47.9575121 Successful Login: true
+Username: test TimeStamp: 2022-09-06 23:13:37.7646715 Successful Login: true
+Username: test TimeStamp: 2022-09-09 18:03:35.4576589 Successful Login: false
+Username:  TimeStamp: 2022-09-09 18:13:25.247226 Successful Login: false
+Username: test TimeStamp: 2022-09-09 18:13:33.3756396 Successful Login: true

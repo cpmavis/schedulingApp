@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainScreenCustomerController">
+    <children>
+        <VBox layoutX="200.0" prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <GridPane>
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Label text="Customers" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="24.0" />
+                     </font></Label>
+                  <Button fx:id="viewAppointmentsButton" mnemonicParsing="false" text="View Appointments" GridPane.rowIndex="1" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="30.0" left="10.0" right="10.0" top="50.0" />
+                    </VBox.margin>
+                </GridPane>
+                <TableView fx:id="customerTableView" prefHeight="650.0" prefWidth="1280.0">
+                    <columns>
+                        <TableColumn fx:id="custIDColumn" prefWidth="75.0" text="Customer ID" />
+                        <TableColumn fx:id="custNameColumn" minWidth="150.0" prefWidth="75.0" text="Customer Name" />
+                        <TableColumn fx:id="custAdressColumn" prefWidth="180.0" text="Adress" />
+                        <TableColumn fx:id="custPostalCodeColumn" prefWidth="100.0" text="Postal Code" />
+                        <TableColumn fx:id="custPhoneNumberColumn" prefWidth="120.0" text="Phone Number" />
+                        <TableColumn fx:id="custDateCreatedColumn" prefWidth="120.0" text="Date Created" />
+                        <TableColumn fx:id="custCreatedByColumn" prefWidth="150.0" text="Created By" />
+                        <TableColumn fx:id="custLastUpdateDateColumn" prefWidth="120.0" text="Last Update Date" />
+                        <TableColumn fx:id="custLastUpdateByColumn" prefWidth="150.0" text="Last Update By" />
+                        <TableColumn fx:id="custStateProvinceColumn" prefWidth="110.0" text="State/Province" />
+                    </columns>
+                </TableView>
+                <GridPane alignment="CENTER_RIGHT">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                    <children>
+                        <Button fx:id="addCustomerButton" mnemonicParsing="false" text="Add Customer" />
+                        <Button fx:id="modifyCustomerButton" mnemonicParsing="false" text="Modify Customer" GridPane.columnIndex="1" />
+                        <Button fx:id="deleteCustomerButton" mnemonicParsing="false" text="Delete Customer" GridPane.columnIndex="2" />
+                        <Button fx:id="reportAppointmentButton" mnemonicParsing="false" text="Report" GridPane.columnIndex="3" />
+                        <Button fx:id="exitAppointmentButton" alignment="CENTER_RIGHT" mnemonicParsing="false" text="Exit" GridPane.columnIndex="4" />
+                    </children>
+                    <VBox.margin>
+                        <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                    </VBox.margin>
+                </GridPane>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
